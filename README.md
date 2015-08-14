@@ -1,7 +1,7 @@
 
 @author Grandclosing
 
-![Alt text](/screenshots/1.png)
+![Alt text](/screenshots/1.PNG)
 
 [Agari-o-clock](http://agari-o-clock.me/) is the ultimate clock/calendar experience. Based on the popular game [Agar.io](http://agar.io/), agari-o-clock offers the same graphical experience with the added useful functionality of a clock and calendar. Never go without knowing the time or date again! 
 
