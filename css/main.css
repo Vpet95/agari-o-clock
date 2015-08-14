@@ -1,0 +1,173 @@
+
+a {
+    text-decoration: none;
+}
+
+body {
+	width: 150vw;
+	height: 150vh;
+	background-image: url('../assets/img/grid.png');
+	background-repeat: no-repeat;
+	background-position: ;
+	overflow: hidden;
+	margin: 0px;
+	padding: 0px;
+	transition: background-position 2s ease;
+	-webkit-transition: background-position 2s ease;
+}
+
+.dot {
+	position: absolute;
+	border-radius: 100%;
+}
+
+#field {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	transition: all 2s ease;
+	-webkit-transition: all 2s ease;
+}
+
+.audioPlayer {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	z-index: 3000;
+	cursor: hand; cursor: pointer;
+
+	background-image: url('../assets/img/pause-button.png');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.audioPlayer:hover {
+	filter: brightness(1.2);
+	-webkit-filter: brightness(1.2);
+}
+
+.footer {
+	z-index: 3000;
+    width: 20%;
+    position: absolute;
+    bottom: 0px;
+    left: 44%;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-weight: bold;
+}
+
+.heart {
+	width: 25px;
+}
+
+.ghub {
+	color: #00CCFF !important;
+}
+
+.ghub:hover {
+	color: #C2F3FF !important;
+}
+
+.ghub:active {
+	color: #00FF99 !important;
+}
+
+.date-time-display {
+	z-index: 3000;
+    position: absolute;
+    width: 50%;
+    height: 10%;
+    left: 24%;
+    top: 28%;
+}
+
+.date-time-display > p { 
+	color: black;
+	font-family: 'Source Sans Pro', sans-serif;
+	text-align: center;
+	margin: 0px;
+}
+
+.time {
+	font-size: 145px;
+}
+
+.date {
+	font-size: 35px;
+}
+
+.playerName {
+	margin: 0px;
+	font-size: 400%;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	font-family: 'Source Sans Pro', sans-serif;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+/*size-based styles*/
+@media (max-width: 960px) and (min-width: 557px){
+	.footer {
+		width: 35%;
+		left: 38%;
+	}
+
+	.time {
+		font-size: 120px;
+	}
+
+	.date {
+		font-size: 25px;
+	}
+
+	.date-time-display {
+		width: 70%;
+		left: 15%;
+	}
+}
+
+@media (max-width: 556px) and (min-width: 376px) {
+	.footer {
+		width: 50%;
+		left: 25%;
+	}
+
+	.time {
+		font-size: 65px;
+	}
+
+	.date {
+		font-size: 16px;
+	}
+
+	.date-time-display {
+		width: 70%;
+		left: 15%;
+	}
+}
+
+@media (max-width: 375px) {
+	.footer {
+		width: 52%;
+		left: 24%;
+	}
+
+	.time {
+		font-size: 65px;
+	}
+
+	.date {
+		font-size: 16px;
+	}
+
+	.date-time-display {
+		width: 70%;
+		left: 15%;
+	}
+}
