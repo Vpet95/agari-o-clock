@@ -79,7 +79,8 @@ function createDot(i, dotData) {
 					created = true;
 				}
 				if(created) {
-					if(theSound != null && theSound != 'undefined') {
+					if(theSound != null && theSound != 'undefined' && voiceSounds == true) {
+						console.log("It's true? " + voiceSounds);
 						playerPhrase.setAttribute("src", theSound);
 						playerPhrase.setAttribute("autoplay", true);
 					}
@@ -89,6 +90,7 @@ function createDot(i, dotData) {
 					playerName.appendChild(theName);
 					dot.appendChild(playerName);
 					dot.appendChild(playerPhrase);
+
 					playerName.className = "playerName";
 
 					created = false;
@@ -213,4 +215,15 @@ function updateTimeDisplay(time, date) {
 	setInterval(function() {
 		update(time, date);
 	}, 1000)
+}
+
+function toggleVoice() {
+	voiceSounds = !voiceSounds;
+	var soundButton = document.getElementsByClassName('voiceSettings')[0];
+	if(voiceSounds) {
+		soundButton.style.backgroundImage = "url('" + voiceSettings.pause + "')";
+	} else {
+		soundButton.style.backgroundImage = "url('" + voiceSettings.play + "')";
+	}
+	console.log(voiceSounds);
 }

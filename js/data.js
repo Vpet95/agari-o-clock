@@ -23,6 +23,8 @@ var playerSounds = [
 	"markiplier"
 ]
 
+var voiceSounds = true;
+
 var x = window.outerWidth, y = window.outerHeight;
 var boundaries = {
 	x_lower: -50,
@@ -54,4 +56,8 @@ var monthsOfYear = ['January', 'February', 'March', 'April', 'May', 'June', 'Jul
 var audioBackgrounds = {
 	play: "assets/img/play-button.png",
 	pause: "assets/img/pause-button.png"
+}
+var voiceSettings = {
+	play: "assets/img/voice-on.png",
+	pause: "assets/img/voice-off.png"
 }

@@ -49,6 +49,26 @@ body {
 	-webkit-filter: brightness(1.2);
 }
 
+.voiceSettings {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	right: 5px;
+	top: 110px;
+	z-index: 3000;
+	cursor: hand; cursor: pointer;
+
+	background-image: url('../assets/img/voice-off.png');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.voiceSettings:hover {
+	filter: brightness(1.2);
+	-webkit-filter: brightness(1.2);
+}
+
 .footer {
 	z-index: 3000;
     width: 20%;
